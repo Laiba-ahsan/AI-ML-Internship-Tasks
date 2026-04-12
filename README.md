@@ -1,20 +1,85 @@
-# AI-ML-Internship-Tasks
+#  House Price Prediction
 
-This repository contains tasks completed as part of my AI/ML Engineering Internship.
+This project builds a **Machine Learning model** to predict house prices using features like area, number of bedrooms, and location.
 
-## Completed Tasks
+---
 
-### Task 1: Exploring and Visualizing Iris Dataset
-- Loaded dataset using seaborn
-- Performed data inspection and summary statistics
-- Created scatter plots, histograms, and box plots
-- Analyzed data patterns and distributions
+##  Overview
 
-## Tools & Technologies
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
+The goal of this project is to:
 
-## Author
+* Analyze housing data
+* Preprocess the dataset
+* Train a regression model
+* Evaluate prediction performance
+
+---
+
+##  Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+---
+
+##  Project Steps
+
+### 1. Data Loading
+
+* Dataset is loaded using Pandas
+
+### 2. Data Preprocessing
+
+* Missing values are removed
+* Categorical features are converted using one-hot encoding
+
+### 3. Feature Selection
+
+* Input features (X) and target variable (Price) are separated
+
+### 4. Train-Test Split
+
+* Data is split into 80% training and 20% testing
+
+### 5. Model Training
+
+* Linear Regression model is trained on the dataset
+
+### 6. Model Evaluation
+
+* Mean Absolute Error (MAE)
+* Root Mean Squared Error (RMSE)
+
+### 7. Visualization
+
+* Scatter plot comparing actual vs predicted prices
+
+---
+
+##  Results
+
+The model predicts house prices with reasonable accuracy.
+Evaluation metrics such as MAE and RMSE are used to measure performance.
+
+---
+
+## How to Run
+
+1. Download or clone this repository
+2. Install required libraries:
+
+```
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+3. Open the Jupyter Notebook
+4. Run all cells
+
+---
+
+##  Author
 Laiba Ahsan
