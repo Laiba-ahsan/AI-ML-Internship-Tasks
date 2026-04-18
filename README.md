@@ -1,85 +1,89 @@
-#  House Price Prediction
+#  Heart Disease Prediction using Machine Learning
 
-This project builds a **Machine Learning model** to predict house prices using features like area, number of bedrooms, and location.
+##  Project Overview
+This project focuses on building a Machine Learning model to predict whether a person is at risk of heart disease based on medical attributes.
+
+The goal is to assist in early detection and support healthcare decision-making using data-driven insights.
 
 ---
 
-##  Overview
+##  Dataset
+- Heart Disease UCI Dataset (Kaggle)
+- Contains patient health-related features such as:
+  - Age
+  - Sex
+  - Chest Pain Type (cp)
+  - Cholesterol (chol)
+  - Maximum Heart Rate (thalach)
+  - Exercise Induced Angina (exang)
+  - And more...
 
-The goal of this project is to:
+---
 
-* Analyze housing data
-* Preprocess the dataset
-* Train a regression model
-* Evaluate prediction performance
+##  Project Workflow
+
+### 1️⃣ Data Cleaning
+- Checked for missing values
+- Removed duplicate records
+- Verified data types
+
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Visualized target distribution
+- Analyzed feature relationships
+- Used heatmaps and plots to identify trends
+
+### 3️⃣ Model Building
+- Applied Logistic Regression for binary classification
+- Split dataset into training and testing sets
+
+### 4️⃣ Model Evaluation
+- Accuracy Score
+- Confusion Matrix
+- ROC Curve & AUC Score
+
+### 5️⃣ Feature Importance
+- Identified key features influencing predictions
+
+---
+
+##  Model Used
+- Logistic Regression
+
+---
+
+## Results
+- Achieved good accuracy on test data
+- ROC-AUC score indicates strong model performance
+- Important features:
+  - Chest Pain Type (cp)
+  - Maximum Heart Rate (thalach)
+  - Exercise-Induced Angina (exang)
 
 ---
 
 ##  Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-
----
-
-##  Project Steps
-
-### 1. Data Loading
-
-* Dataset is loaded using Pandas
-
-### 2. Data Preprocessing
-
-* Missing values are removed
-* Categorical features are converted using one-hot encoding
-
-### 3. Feature Selection
-
-* Input features (X) and target variable (Price) are separated
-
-### 4. Train-Test Split
-
-* Data is split into 80% training and 20% testing
-
-### 5. Model Training
-
-* Linear Regression model is trained on the dataset
-
-### 6. Model Evaluation
-
-* Mean Absolute Error (MAE)
-* Root Mean Squared Error (RMSE)
-
-### 7. Visualization
-
-* Scatter plot comparing actual vs predicted prices
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
 ---
 
-##  Results
-
-The model predicts house prices with reasonable accuracy.
-Evaluation metrics such as MAE and RMSE are used to measure performance.
-
----
-
-## How to Run
-
-1. Download or clone this repository
-2. Install required libraries:
-
-```
-pip install pandas numpy matplotlib seaborn scikit-learn
-```
-
-3. Open the Jupyter Notebook
-4. Run all cells
+## Key Learnings
+- Understanding medical datasets
+- Performing EDA effectively
+- Building classification models
+- Evaluating model performance using ROC-AUC
+- Interpreting feature importance
 
 ---
 
-##  Author
-Laiba Ahsan
+## Conclusion
+This project demonstrates how machine learning can be applied in healthcare to predict heart disease risk. Such models can support early diagnosis and improve patient outcomes.
+
+---
+
+## Author
+**Laiba Ahsan**
